@@ -55,8 +55,8 @@ end
 -- Function to prompt questions
 local function prompt_questions(filetype)
     -- Get the questions for the specific filetype and default questions
-    local specific_questions = M.options.filetype_questions[filetype] or {}
-    local default_questions = M.options.filetype_questions["*"] or {}
+    local specific_questions = config.options.filetype_questions[filetype] or {}
+    local default_questions = config.options.filetype_questions["*"] or {}
 
     -- Merge the questions (default questions first, followed by specific questions)
     local questions = vim.list_extend(vim.deepcopy(default_questions), specific_questions)
