@@ -1,5 +1,7 @@
 # zpragmatic.nvim
 
+[Demo](https://github.com/user-attachments/assets/59425e2a-f6f4-4ccf-a417-65fc7c2343e0)
+
 ## Introduction
 
 ### The Pragmatic NeoVim Plugin
