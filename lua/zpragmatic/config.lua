@@ -1,20 +1,8 @@
 local M = {}
 
 M.defaults = {
-    filetype_questions = {
-        ["*"] = {
-            "Save changes? (y/n/q): ",
-        },
-        ["java"] = {
-            "Did you check for syntax errors? (y/n/q): ",
-            "Are all tests passing? (y/n/q): ",
-        },
-        ["javascript"] = {
-            "Did you run the linter? (y/n/q): ",
-            "Are there any console logs to remove? (y/n/q): ",
-        },
-    },
-    bypass_filetypes = { "markdown", "txt", "json" },
+    filetype_questions = {},
+    bypass_filetypes = {},
 }
 
 M.options = vim.deepcopy(M.defaults)
